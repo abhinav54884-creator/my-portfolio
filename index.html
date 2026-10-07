@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Abhinav M | CSE Student & Web Developer</title>
+  <meta name="description" content="Portfolio of Abhinav M - Computer Science student at CBIT. Full Stack Developer, Java Systems & DSA Practitioner.">
+
+  <!-- Google Fonts & Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+  <!-- Aurora Glassmorphism Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Ambient Animated Aurora Mesh Blobs -->
+  <div class="aurora-container">
+    <div class="aurora-blob aurora-blob-1"></div>
+    <div class="aurora-blob aurora-blob-2"></div>
+    <div class="aurora-blob aurora-blob-3"></div>
+  </div>
+
+  <!-- Background Noise Grid Overlay -->
+  <div class="bg-grid-overlay"></div>
+
+  <!-- Magnetic Custom Cursor -->
+  <div class="custom-cursor" id="customCursor"></div>
+  <div class="cursor-follower" id="cursorFollower"></div>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar" id="navbar">
+    <div class="container nav-container">
+      <a href="#home" class="logo sound-btn">
+        <div class="logo-icon">A</div>
+        <span class="gradient-text-aurora">Abhinav.dev</span>
+      </a>
+
+      <ul class="nav-links">
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#education" class="nav-link">Education</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#achievements" class="nav-link">Achievements</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <button class="icon-btn" id="soundToggle" title="Toggle Sound FX">
+          <i class="fas fa-volume-up"></i>
+        </button>
+        <button class="icon-btn" id="themeToggle" title="Toggle Theme Mode">
+          <i class="fas fa-sun"></i>
+        </button>
+        <button class="btn btn-aurora sound-btn" onclick="openProjectModal('resume')">
+          <i class="fas fa-file-pdf"></i> Resume
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Bento Section -->
+  <section class="hero-section" id="home">
+    <div class="container">
+      <div class="bento-grid">
+        <!-- Main Bento Card -->
+        <div class="bento-card hero-main-card">
+          <div class="hero-tag">
+            <span class="status-dot"></span>
+            <span>CSE @ CBIT (2024 – 2028)</span>
+          </div>
+
+          <h1 class="hero-headline">
+            Crafting Digital Solutions & <span class="gradient-text-aurora">Software Systems</span>
+          </h1>
+
+          <div class="hero-typing-box">
+            <span id="typingText"></span><span class="cursor-blink"></span>
+          </div>
+
+          <p class="hero-subtext">
+            Computer Science & Engineering student at <strong>Chaitanya Bharathi Institute of Technology</strong>. Passionate about full-stack web development, Java software architectures, and algorithmic problem solving.
+          </p>
+
+          <div class="hero-buttons">
+            <a href="#projects" class="btn btn-aurora sound-btn">
+              <i class="fas fa-sparkles"></i> Explore Projects
+            </a>
+            <a href="#contact" class="btn btn-glass sound-btn">
+              <i class="fas fa-paper-plane"></i> Get In Touch
+            </a>
+          </div>
+        </div>
+
+        <!-- Side Profile Bento Card -->
+        <div class="bento-card hero-side-card">
+          <div class="avatar-bento">
+            <div class="avatar-ring"></div>
+            <div class="avatar-inner">
+              <i class="fas fa-user-astronaut"></i>
+            </div>
+          </div>
+
+          <h3>Abhinav M</h3>
+          <p class="profile-location"><i class="fas fa-location-dot"></i> Hyderabad, Telangana, India</p>
+
+          <div class="hero-quick-stats">
+            <div>
+              <div class="quick-stat-num">3+</div>
+              <div class="quick-stat-lbl">Projects</div>
+            </div>
+            <div>
+              <div class="quick-stat-num">100+</div>
+              <div class="quick-stat-lbl">LeetCode</div>
+            </div>
+            <div>
+              <div class="quick-stat-num">7+</div>
+              <div class="quick-stat-lbl">Skills</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Education Bento Section -->
+  <section class="section-padding" id="education">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge">Academic Milestones</span>
+        <h2 class="section-title">Education Journey</h2>
+        <p class="section-subtitle">Solidifying core theoretical concepts in Computer Science and software design.</p>
+      </div>
+
+      <div class="bento-grid">
+        <div class="bento-card education-bento">
+          <div class="timeline-list">
+            <!-- CBIT -->
+            <div class="timeline-row">
+              <div class="timeline-time">AUG 2024 – MAY 2028</div>
+              <div class="timeline-details">
+                <h3>Chaitanya Bharathi Institute of Technology (CBIT)</h3>
+                <p>Bachelor of Engineering (B.E.) in Computer Science and Engineering</p>
+                <div style="display: flex; gap: 8px; flex-wrap: wrap; margin-top: 12px;">
+                  <span class="tag-pill">Data Structures</span>
+                  <span class="tag-pill">OOP</span>
+                  <span class="tag-pill">DBMS</span>
+                  <span class="tag-pill">Algorithms</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Sri Chaitanya -->
+            <div class="timeline-row">
+              <div class="timeline-time">MARCH 2024</div>
+              <div class="timeline-details">
+                <h3>Sri Chaitanya Junior College</h3>
+                <p>Class XII (Higher Secondary Education - MPC Track)</p>
+              </div>
+            </div>
+
+            <!-- Montessori -->
+            <div class="timeline-row">
+              <div class="timeline-time">MARCH 2022</div>
+              <div class="timeline-details">
+                <h3>Montessori High School</h3>
+                <p>Class X (Secondary School Certificate)</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Bento Section -->
+  <section class="section-padding" id="projects">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge">Interactive Demos</span>
+        <h2 class="section-title">Featured Projects</h2>
+        <p class="section-subtitle">Launch interactive live playable previews for each project directly in your browser.</p>
+      </div>
+
+      <div class="bento-grid">
+        <!-- Project 1: To-Do List -->
+        <div class="bento-card project-bento-card">
+          <div>
+            <div class="project-header-row">
+              <div class="project-icon-box"><i class="fas fa-list-check"></i></div>
+              <span class="tag-pill tag-pill-live"><i class="fas fa-circle-play"></i> Playable Demo</span>
+            </div>
+            <h3>To-Do List Web App</h3>
+            <p style="color: var(--text-muted); margin-top: 8px; font-size: 0.95rem;">
+              Responsive web application for managing tasks, state filtering, and tracking daily goals with interactive audio.
+            </p>
+            <div class="project-tech-stack">
+              <span class="tag-pill">HTML5</span>
+              <span class="tag-pill">CSS3</span>
+              <span class="tag-pill">JavaScript</span>
+            </div>
+          </div>
+          <button class="btn btn-glass sound-btn" style="width: 100%; justify-content: center;" onclick="openProjectModal('todo')">
+            <i class="fas fa-play"></i> Open Interactive App
+          </button>
+        </div>
+
+        <!-- Project 2: Rock Paper Scissors -->
+        <div class="bento-card project-bento-card">
+          <div>
+            <div class="project-header-row">
+              <div class="project-icon-box"><i class="fas fa-gamepad"></i></div>
+              <span class="tag-pill tag-pill-live"><i class="fas fa-circle-play"></i> Playable Demo</span>
+            </div>
+            <h3>Rock Paper Scissors Game</h3>
+            <p style="color: var(--text-muted); margin-top: 8px; font-size: 0.95rem;">
+              Classic game created against computer AI with real-time score tracking and victory/defeat sound effects.
+            </p>
+            <div class="project-tech-stack">
+              <span class="tag-pill">HTML5</span>
+              <span class="tag-pill">CSS3</span>
+              <span class="tag-pill">JavaScript</span>
+            </div>
+          </div>
+          <button class="btn btn-glass sound-btn" style="width: 100%; justify-content: center;" onclick="openProjectModal('rps')">
+            <i class="fas fa-gamepad"></i> Play Game Now
+          </button>
+        </div>
+
+        <!-- Project 3: Library Management System -->
+        <div class="bento-card project-bento-card">
+          <div>
+            <div class="project-header-row">
+              <div class="project-icon-box"><i class="fas fa-book-bookmark"></i></div>
+              <span class="tag-pill" style="background: rgba(245, 158, 11, 0.15); color: var(--aurora-amber); border-color: rgba(245, 158, 11, 0.3);">
+                <i class="fas fa-terminal"></i> SQL Console
+              </span>
+            </div>
+            <h3>Library Management System</h3>
+            <p style="color: var(--text-muted); margin-top: 8px; font-size: 0.95rem;">
+              Java & MySQL desktop management software for book record CRUD operations and issue/return log tracking.
+            </p>
+            <div class="project-tech-stack">
+              <span class="tag-pill">Java</span>
+              <span class="tag-pill">MySQL</span>
+              <span class="tag-pill">JDBC</span>
+            </div>
+          </div>
+          <button class="btn btn-glass sound-btn" style="width: 100%; justify-content: center;" onclick="openProjectModal('library')">
+            <i class="fas fa-database"></i> Launch SQL Simulator
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Bento Section -->
+  <section class="section-padding" id="skills">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge">Skill Stack</span>
+        <h2 class="section-title">Technical Expertise</h2>
+        <p class="section-subtitle">Programming languages, development tools, databases, and core soft skills.</p>
+      </div>
+
+      <div class="skills-nav">
+        <button class="skills-tab-btn active" data-filter="all">All Skills</button>
+        <button class="skills-tab-btn" data-filter="languages">Languages</button>
+        <button class="skills-tab-btn" data-filter="database">Database & Tools</button>
+        <button class="skills-tab-btn" data-filter="coursework">Coursework</button>
+        <button class="skills-tab-btn" data-filter="soft">Soft Skills</button>
+      </div>
+
+      <div class="skills-flex-grid">
+        <!-- Languages -->
+        <div class="skill-bento-tile" data-category="languages">
+          <i class="fab fa-c"></i>
+          <span>C Language</span>
+        </div>
+        <div class="skill-bento-tile" data-category="languages">
+          <i class="fas fa-code"></i>
+          <span>C++</span>
+        </div>
+        <div class="skill-bento-tile" data-category="languages">
+          <i class="fab fa-java"></i>
+          <span>Java</span>
+        </div>
+        <div class="skill-bento-tile" data-category="languages">
+          <i class="fab fa-python"></i>
+          <span>Python</span>
+        </div>
+        <div class="skill-bento-tile" data-category="languages">
+          <i class="fab fa-js"></i>
+          <span>JavaScript</span>
+        </div>
+        <div class="skill-bento-tile" data-category="languages">
+          <i class="fab fa-html5"></i>
+          <span>HTML5</span>
+        </div>
+        <div class="skill-bento-tile" data-category="languages">
+          <i class="fab fa-css3-alt"></i>
+          <span>CSS3</span>
+        </div>
+
+        <!-- Database & Tools -->
+        <div class="skill-bento-tile" data-category="database">
+          <i class="fas fa-database"></i>
+          <span>MySQL</span>
+        </div>
+        <div class="skill-bento-tile" data-category="database">
+          <i class="fab fa-git-alt"></i>
+          <span>Git</span>
+        </div>
+        <div class="skill-bento-tile" data-category="database">
+          <i class="fas fa-laptop-code"></i>
+          <span>VS Code</span>
+        </div>
+        <div class="skill-bento-tile" data-category="database">
+          <i class="fas fa-drafting-compass"></i>
+          <span>AutoCAD</span>
+        </div>
+
+        <!-- Coursework -->
+        <div class="skill-bento-tile" data-category="coursework">
+          <i class="fas fa-sitemap"></i>
+          <span>Data Structures</span>
+        </div>
+        <div class="skill-bento-tile" data-category="coursework">
+          <i class="fas fa-cubes"></i>
+          <span>OOP</span>
+        </div>
+        <div class="skill-bento-tile" data-category="coursework">
+          <i class="fas fa-server"></i>
+          <span>DBMS</span>
+        </div>
+
+        <!-- Soft Skills -->
+        <div class="skill-bento-tile" data-category="soft">
+          <i class="fas fa-comments"></i>
+          <span>Communication</span>
+        </div>
+        <div class="skill-bento-tile" data-category="soft">
+          <i class="fas fa-people-group"></i>
+          <span>Teamwork</span>
+        </div>
+        <div class="skill-bento-tile" data-category="soft">
+          <i class="fas fa-lightbulb"></i>
+          <span>Problem Solving</span>
+        </div>
+        <div class="skill-bento-tile" data-category="soft">
+          <i class="fas fa-clock"></i>
+          <span>Time Management</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Achievements Bento Section -->
+  <section class="section-padding" id="achievements">
+    <div class="container">
+      <div class="bento-grid">
+        <div class="bento-card" style="grid-column: span 12;">
+          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 32px; align-items: center;">
+            <div>
+              <span class="section-badge"><i class="fas fa-trophy"></i> Competitive Coding</span>
+              <h2 style="font-size: 2.2rem; margin-bottom: 16px;">LeetCode & DSA Practitioner</h2>
+              <p style="color: var(--text-muted); margin-bottom: 24px;">
+                Actively practicing algorithmic problems on LeetCode. Strengthening mastery in space-time complexity analysis, array operations, tree traversals, and dynamic programming patterns.
+              </p>
+              <div style="display: flex; gap: 12px; flex-wrap: wrap;">
+                <a href="https://leetcode.com" target="_blank" class="btn btn-aurora sound-btn">
+                  <i class="fas fa-external-link-alt"></i> LeetCode Profile
+                </a>
+              </div>
+            </div>
+
+            <div style="background: rgba(0,0,0,0.3); padding: 24px; border-radius: var(--radius-md); border: 1px solid var(--border-card);">
+              <h4 style="margin-bottom: 16px;"><i class="fas fa-chart-line text-aurora-cyan"></i> Algorithmic Mastery</h4>
+              <div style="display: flex; flex-direction: column; gap: 16px;">
+                <div>
+                  <div style="display: flex; justify-content: space-between; font-size: 0.85rem; margin-bottom: 6px;">
+                    <span>Arrays & Hash Tables</span>
+                    <span class="gradient-text-aurora">Proficient</span>
+                  </div>
+                  <div style="height: 6px; background: rgba(255,255,255,0.08); border-radius: 3px; overflow: hidden;">
+                    <div style="width: 85%; height: 100%; background: linear-gradient(90deg, var(--aurora-purple), var(--aurora-cyan));"></div>
+                  </div>
+                </div>
+                <div>
+                  <div style="display: flex; justify-content: space-between; font-size: 0.85rem; margin-bottom: 6px;">
+                    <span>Linked Lists & Stacks/Queues</span>
+                    <span class="gradient-text-pink">Advanced</span>
+                  </div>
+                  <div style="height: 6px; background: rgba(255,255,255,0.08); border-radius: 3px; overflow: hidden;">
+                    <div style="width: 80%; height: 100%; background: linear-gradient(90deg, var(--aurora-pink), var(--aurora-purple));"></div>
+                  </div>
+                </div>
+                <div>
+                  <div style="display: flex; justify-content: space-between; font-size: 0.85rem; margin-bottom: 6px;">
+                    <span>Trees & Graph Algorithms</span>
+                    <span style="color: var(--aurora-emerald);">Practicing</span>
+                  </div>
+                  <div style="height: 6px; background: rgba(255,255,255,0.08); border-radius: 3px; overflow: hidden;">
+                    <div style="width: 75%; height: 100%; background: linear-gradient(90deg, var(--aurora-emerald), var(--aurora-cyan));"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Bento Section -->
+  <section class="section-padding" id="contact">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge">Get In Touch</span>
+        <h2 class="section-title">Let's Work Together</h2>
+        <p class="section-subtitle">Open for software engineering opportunities, tech discussions, and project collaborations.</p>
+      </div>
+
+      <div class="bento-grid">
+        <!-- Left Contact Info Bento -->
+        <div class="bento-card contact-bento-left">
+          <h3 style="margin-bottom: 24px;">Direct Contact</h3>
+
+          <a href="mailto:abhinav54884@gmail.com" class="contact-link-row sound-btn">
+            <div class="contact-icon-box"><i class="fas fa-envelope"></i></div>
+            <div>
+              <span style="font-size: 0.75rem; color: var(--text-muted); display: block;">Email</span>
+              <strong>abhinav54884@gmail.com</strong>
+            </div>
+          </a>
+
+          <a href="tel:+919154757314" class="contact-link-row sound-btn">
+            <div class="contact-icon-box"><i class="fas fa-phone"></i></div>
+            <div>
+              <span style="font-size: 0.75rem; color: var(--text-muted); display: block;">Phone</span>
+              <strong>+91 9154757314</strong>
+            </div>
+          </a>
+
+          <div class="contact-link-row">
+            <div class="contact-icon-box"><i class="fas fa-building-columns"></i></div>
+            <div>
+              <span style="font-size: 0.75rem; color: var(--text-muted); display: block;">Institution</span>
+              <strong>CBIT, Hyderabad</strong>
+            </div>
+          </div>
+
+          <button class="btn btn-glass sound-btn" style="width: 100%; justify-content: center; margin-top: 12px;" onclick="copyContactInfo()">
+            <i class="fas fa-copy"></i> Copy Contact Details
+          </button>
+        </div>
+
+        <!-- Right Contact Form Bento -->
+        <div class="bento-card contact-bento-right">
+          <form id="contactForm">
+            <div class="form-group-bento">
+              <label for="contactName">Your Name</label>
+              <input type="text" id="contactName" class="form-input-bento" placeholder="e.g. Rahul Sharma" required>
+            </div>
+
+            <div class="form-group-bento">
+              <label for="contactEmail">Your Email</label>
+              <input type="email" id="contactEmail" class="form-input-bento" placeholder="e.g. rahul@example.com" required>
+            </div>
+
+            <div class="form-group-bento">
+              <label for="contactMessage">Message</label>
+              <textarea id="contactMessage" class="form-input-bento" placeholder="Write your message..." required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-aurora sound-btn" style="width: 100%; justify-content: center;">
+              <i class="fas fa-paper-plane"></i> Send Message
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer style="padding: 40px 0; border-top: 1px solid var(--border-card); background: var(--bg-secondary); text-align: center;">
+    <div class="container" style="display: flex; flex-direction: column; align-items: center; gap: 14px;">
+      <div class="logo">
+        <div class="logo-icon">A</div>
+        <span class="gradient-text-aurora">Abhinav M</span>
+      </div>
+      <p style="color: var(--text-muted); font-size: 0.9rem;">
+        Designed & Built for Abhinav M | CSE @ CBIT (2024 - 2028)
+      </p>
+    </div>
+  </footer>
+
+  <!-- Reusable Modal Window -->
+  <div class="modal-overlay" id="modalOverlay">
+    <div class="modal-window">
+      <div class="modal-head">
+        <h3 id="modalTitle">Project Preview</h3>
+        <button class="modal-close-btn" id="modalClose">&times;</button>
+      </div>
+      <div class="modal-body-content" id="modalBody">
+        <!-- Dynamic content injected by JavaScript -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification -->
+  <div class="toast-msg" id="globalToast"></div>
+
+  <!-- Scripts -->
+  <script src="js/sound-engine.js"></script>
+  <script src="js/demos.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
